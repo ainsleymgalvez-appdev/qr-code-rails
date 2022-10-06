@@ -1,0 +1,12 @@
+<dl>
+<dt>Network</dt>
+<dd><%= @ssid %></dd>
+
+<dt>Password</dt>
+<dd><%= @pw %></dd>
+
+</dl>
+
+<br>
+
+<%= @qr_code.as_svg.html_safe%>

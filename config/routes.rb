@@ -5,8 +5,19 @@ Rails.application.routes.draw do
   # /url
   # /wifi
   # /sms
+
+  # MY OWN CODE
   
   get("/", {:controller => "application", :action => "homepage"})
+
+  get("/text", {:controller => "application", :action => "text_qr"})
+  
+  get("/wifi", {:controller => "application", :action => "wifi_qr"})
+
+  get("/url", {:controller => "application", :action => "url_qr"})
+
+  get("/sms", {:controller => "application", :action => "sms_qr"})
+ 
 
   # Solutions below.
 

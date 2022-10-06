@@ -1,0 +1,11 @@
+<dl>
+<dt>Phone</dt>
+<dd><%=@phone%></dd>
+
+<dt>Message</dt>
+<dd><%=@message%></dd>
+</dl>
+
+<br>
+
+<%= @qr_code.as_svg.html_safe%>
